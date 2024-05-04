@@ -1,0 +1,147 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+object "<u>testDocument:Document</u>" as document{
+    filename = "test.txt"
+}
+
+object "<u>CB99:CharacterProperties</u>" as characterProperties1{
+    font = "Calibri"
+    color = "Blue"
+    size = 99
+}
+
+object "<u>AB14:CharacterProperties</u>" as characterProperties2{
+    font = "Arial"
+    color = "Black"
+    size = 14
+}
+
+object "<u>VB18:CharacterProperties</u>" as characterProperties3{
+     font = "Verdana"
+     color = "Blue"
+     size = 18
+}
+
+object "<u>VR12:CharacterProperties</u>" as characterProperties4{
+    font = "Verdana"
+    color = "Red"
+    size = 12
+}
+
+object "<u>H:Character</u>" as h{
+    char = "H"
+}
+
+object "<u>e:Character</u>" as e{
+    char = "e"
+}
+
+object "<u>l:Character</u>" as l1{
+    char "l"
+}
+
+object "<u>l:Character</u>" as l2{
+    char = "l"
+}
+
+object "<u>o:Character</u>" as o{
+    char = "o"
+}
+
+object "<u>W:Character</u>" as w{
+    char = "w"
+}
+
+object "<u>o:Character</u>" as o2{
+    char = "o"
+}
+
+object "<u>r:Character</u>" as r{
+    char = "r"
+}
+
+object "<u>l:Character</u>" as l3{
+    char = "l"
+}
+
+object "<u>d:Character</u>" as d{
+    char = "d"
+}
+
+object "<u>C:Character</u>" as c{
+    font = "Verdana"
+    color = "Blue"
+    size = 18
+}
+
+object "<u>S:Character</u>" as s{
+    font = "Verdana"
+    color = "Blue"
+    size = 18
+}
+
+object "<u>5:Character</u>" as 5{
+    font = "Verdana"
+    color = "Red"
+    size = 12
+}
+
+object "<u>8:Character</u>" as 8{
+    font = "Verdana"
+    color = "Red"
+    size = 12
+}
+
+object "<u>0:Character</u>" as 01{
+    font = "Verdana"
+    color = "Red"
+    size = 12
+}
+object "<u>0:Character</u>" as 02{
+    font = "Verdana"
+    color = "Red"
+    size = 12
+}
+
+characterProperties1 --> h
+characterProperties1 --> w
+
+characterProperties2 --> e
+characterProperties2 --> l1
+characterProperties2 --> l2
+characterProperties2 --> o
+characterProperties2 --> o2
+characterProperties2 --> r
+characterProperties2 --> l3
+characterProperties2 --> d
+
+characterProperties3 --> c
+characterProperties3 --> s
+
+characterProperties4 --> 5
+characterProperties4 --> 8
+characterProperties4 --> 01
+characterProperties4 --> 02
+
+
+
+h --> document
+e --> document
+l1 --> document
+l2 --> document
+o --> document
+d --> document
+w --> document
+o2 --> document
+r --> document
+l3 --> document
+d --> document
+c --> document
+s --> document
+5 --> document
+8 --> document
+01 --> document
+02 --> document
+@enduml
